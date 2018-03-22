@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Module A</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./scripts/jquery.js"></script>
+    <script src="./scripts/scripts.js"></script>
+</head>
+
+<body class="flex">
+    <div class="container">
+        <div class="ins">
+            <h1>Instruction</h1>
+            <p>1. Airplane: Element that is controlled by the user.
+                <br> 2. Clouds: Elements that move from right to left to give the impression.
+                <br> 3. Birds: Elements that airplane needs to dodge.
+                <br> 4. Stars: Elements that airplane needs to get to increment star’s counter.
+                <br> 5. Parachutes: Elements that airplane needs to get to increment the fuel level.
+                <br> 6. Fuel Counter: Elements that shows how much fuel is available.
+                <br> 7. Star Counter: Elements that shows how many stars the airplane got.
+                <br> 8. Timer: Elements that shows how much time the airplane has been flying.
+                <br> 9. Sound Button: Enable and Disable the sound in the game.
+                <br> 10. Font Size Buttons: Up and Down to increase and decrease the font size.
+                <br> 11. Pause/continue button: Button to pause/continue the game.
+                <br> 12. Logo: Add the provided logo in the game.</p>
+            <div class="btn" id="btn1">
+                Start Game
+                <div class="btn_l"></div>
+                <div class="btn_r"></div>
+            </div>
+        </div>
+        <div class="rank hide">
+            <h1>Ranking</h1>
+            <table class="tab">
+                <thead>
+                    <tr>
+                        <td>Position</td>
+                        <td>Name</td>
+                        <td>Score</td>
+                        <td>Time</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Nguyen Van A</td>
+                        <td>12</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Nguyen Van C</td>
+                        <td>11</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Nguyen Van D</td>
+                        <td>10</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Nguyen Van B</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="btn" id="btn2">
+                Start Game
+                <div class="btn_l"></div>
+                <div class="btn_r"></div>
+            </div>
+        </div>
+        <div class="main hide">
+            <div class="bar">
+                <div class="topBar">
+                    <div class="nhien_lieu fix_pos"></div>
+                    <div class="txt_nl">10</div>
+                    <div class="sao fix_pos"></div>
+                    <div class="txt_sao">0</div>
+                    <div class="txtTime fix_pos">0</div>
+                </div>
+                <div class="botBar">
+                    <div>
+                        <div class="start fix_pos"></div>
+                        <div class="loa fix_pos"></div>
+                    </div>
+                    <div>
+                        <div class="fUp">A +</div>
+                        <div class="fDown">A -</div>
+                    </div>
+                </div>
+            </div>
+            <div class="pad">
+                <div id="game">
+                    <div class="static">
+                        <div class="may_bay"></div>
+                    </div>
+                    <div id="dynamic">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
