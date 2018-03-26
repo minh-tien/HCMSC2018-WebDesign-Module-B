@@ -15,9 +15,10 @@
     width: 1024px;
     height: 768px;
     background: url(../images/bg.png);
+    position: relative;
 }
 
-.ins, .rank, .main{
+.ins, .rank, .main, .over{
     flex: 1;
     display: flex;
     height: 100%;
@@ -27,7 +28,7 @@
 }
 
 .hide{
-    display: none;
+    display: none !important;
 }
 
 h1{
@@ -35,7 +36,6 @@ h1{
     font-weight: bold;
     padding: 32px;
 }
-
 
 /* -------------- Button ----------------*/
 
@@ -165,6 +165,18 @@ h1{
     height: 25px;
     position: absolute;
     z-index: 1;
+    cursor: pointer;
+}
+
+.loa_dis{
+    background-image: url('../images/loa-dis.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
 }
 
 .may_bay{
@@ -219,6 +231,7 @@ h1{
     width: 25px;
     height: 25px;
     z-index: 1;
+    cursor: pointer;
 }
 
 .fix_pos{
@@ -254,9 +267,18 @@ h1{
 }
 
 .botBar>div{
-    width: 80px;
     display: flex;
     margin: 0 16px;
+}
+
+.pause{
+    width: 25px !important;
+    height: 25px;
+    border-left: 10px solid #fff;
+    border-right: 10px solid #fff;
+    z-index: 1;
+    margin-right: 15px;
+    cursor: pointer;
 }
 
 /* ------------------- Game ----------------- */
@@ -279,3 +301,80 @@ h1{
     overflow: hidden;
 }
 
+/*--------------------- Control ------------------------*/
+
+.control{
+    display: flex;
+    width: 202px;
+    height: 202px;
+    position: absolute;
+    top: 500px;
+    left: 800px;
+    flex-wrap: wrap;
+    transform: rotateZ(45deg);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid gray;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.cin{
+    width: 100px;
+    height: 100px;
+    border: 1px solid gray;
+    background-color: blue;
+    opacity: 0.2;
+}
+
+.control>div>div{
+    width: 50px;
+    height: 50px;
+}
+
+.control>div:first-child>div{
+    border-left: 5px solid gray;
+    border-top: 5px solid gray;
+    margin: 35px;
+}
+
+.control>div:nth-child(2)>div{
+    border-right: 5px solid gray;
+    border-top: 5px solid gray;
+    margin: 35px 15px;
+}
+
+.control>div:nth-child(3)>div{
+    border-left: 5px solid gray;
+    border-bottom: 5px solid gray;
+    margin: 15px 35px;
+}
+
+.control>div:last-child>div{
+    border-right: 5px solid gray;
+    border-bottom: 5px solid gray;
+    margin: 15px;
+}
+
+.control>div:hover{
+    box-shadow: 0 0 5px green;
+    opacity: 0.5;
+}
+
+/* ------------------------------- Over ------------------------ */
+
+#name{
+    margin: 16px;
+    padding: 16px;
+}
+
+#btn3-dis{
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.fUp, .fDown{
+    cursor: pointer;
+    z-index: 1;
+    user-select: none;
+}

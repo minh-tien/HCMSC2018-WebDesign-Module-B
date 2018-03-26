@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Module A</title>
+    <title>Module B - Huỳnh Nhật Minh Tiến</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="./scripts/jquery.js"></script>
     <script src="./scripts/scripts.js"></script>
@@ -38,38 +38,13 @@
             <table class="tab">
                 <thead>
                     <tr>
-                        <td>Position</td>
-                        <td>Name</td>
-                        <td>Score</td>
-                        <td>Time</td>
+                        <td class="cF">Position</td>
+                        <td class="cF">Name</td>
+                        <td class="cF">Score</td>
+                        <td class="cF">Time</td>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Nguyen Van A</td>
-                        <td>12</td>
-                        <td>14</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Nguyen Van C</td>
-                        <td>11</td>
-                        <td>14</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Nguyen Van D</td>
-                        <td>10</td>
-                        <td>13</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Nguyen Van B</td>
-                        <td>4</td>
-                        <td>5</td>
-                    </tr>
-                </tbody>
+                <tbody id="tab"></tbody>
             </table>
             <div class="btn" id="btn2">
                 Start Game
@@ -81,15 +56,17 @@
             <div class="bar">
                 <div class="topBar">
                     <div class="nhien_lieu fix_pos"></div>
-                    <div class="txt_nl">10</div>
+                    <div class="txt_nl cF">10</div>
                     <div class="sao fix_pos"></div>
-                    <div class="txt_sao">0</div>
-                    <div class="txtTime fix_pos">0</div>
+                    <div class="txt_sao cF">0</div>
+                    <div class="txtTime fix_pos cF">0</div>
                 </div>
                 <div class="botBar">
                     <div>
-                        <div class="start fix_pos"></div>
+                        <div class="start fix_pos hide"></div>
+                        <div class="pause fix_pos"></div>
                         <div class="loa fix_pos"></div>
+                        <div class="loa_dis fix_pos hide"></div>
                     </div>
                     <div>
                         <div class="fUp">A +</div>
@@ -103,9 +80,33 @@
                         <div class="may_bay"></div>
                     </div>
                     <div id="dynamic">
-                        
+
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="over hide">
+            <h1>Game Over</h1>
+            <input type="text" id="name" placeholder="Enter your name">
+            <div class="btn hide" id="btn3">
+                Continue
+                <div class="btn_l"></div>
+                <div class="btn_r"></div>
+            </div>
+            <div class="btn" id="btn3-dis">Continue</div>
+        </div>
+        <div class="control hide">
+            <div class="cin" id="c1">
+                <div></div>
+            </div>
+            <div class="cin" id="c2">
+                <div></div>
+            </div>
+            <div class="cin" id="c3">
+                <div></div>
+            </div>
+            <div class="cin" id="c4">
+                <div></div>
             </div>
         </div>
     </div>
